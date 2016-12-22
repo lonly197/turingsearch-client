@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1cec00ec-eb65-4276-b4fa-8c4cf0e0034c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TsConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TuringSearchAdminUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TuringSearchOption.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-cn.com.systex.search.test.ElasticApiTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/cn.com.systex.search.test.ElasticApiTest.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TsClient.java" afterPath="$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TsClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TuringSearchUtil.java" afterPath="$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TuringSearchUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/cn/com/systex/search/test/ElasticApiTest.java" afterPath="$PROJECT_DIR$/src/test/java/cn/com/turing/search/test/TuringSearchApiTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,22 +30,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TuringSearchUtil.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TuringSearchUtil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TuringSearchUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-174">
-              <caret line="287" column="52" lean-forward="true" selection-start-line="287" selection-start-column="52" selection-end-line="287" selection-end-column="52" />
-              <folding />
+            <state relative-caret-position="520">
+              <caret line="458" column="0" lean-forward="true" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,6 +50,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>inser</find>
+      <find>SearchLogic</find>
+      <find>SearchType</find>
+      <find>bulkCreateIndex</find>
+      <find>deleteIndex</find>
+      <find>matchSearch</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -72,10 +80,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TsClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/ElasticAdminUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TuringSearchOption.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/ElasticSearchUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TsConfig.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TuringSearchAdminUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TuringSearchUtil.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/cn/com/turing/search/test/TuringSearchApiTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TsConfig.java" />
       </list>
     </option>
   </component>
@@ -125,7 +137,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -141,6 +152,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -642,7 +654,8 @@
       <workItem from="1482312456891" duration="1072000" />
       <workItem from="1482314667214" duration="1851000" />
       <workItem from="1482317070771" duration="968000" />
-      <workItem from="1482374118319" duration="729000" />
+      <workItem from="1482374118319" duration="4355000" />
+      <workItem from="1482379539125" duration="5859000" />
     </task>
     <task id="LOCAL-00001" summary="add git ignore file">
       <created>1482374212243</created>
@@ -655,15 +668,15 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4620000" />
+    <option name="totallyTimeSpent" value="14105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1756" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39699864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34447476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -680,13 +693,13 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35663658" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299389" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946795" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20006444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946795" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -734,7 +747,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -750,7 +765,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10152">
           <caret line="319" column="7" lean-forward="false" selection-start-line="319" selection-start-column="7" selection-end-line="319" selection-end-column="7" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -758,9 +775,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -776,7 +791,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -784,38 +801,132 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TsClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TsConfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/EsClient.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/ElasticSearchUtil.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TuringSearchUtil.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/2.4.3/elasticsearch-2.4.3.jar!/org/elasticsearch/action/ActionFuture.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="287" column="52" lean-forward="true" selection-start-line="287" selection-start-column="52" selection-end-line="287" selection-end-column="52" />
+        <state relative-caret-position="252">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TsClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="63" column="61" lean-forward="false" selection-start-line="62" selection-start-column="8" selection-end-line="63" selection-end-column="61" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/2.4.3/elasticsearch-2.4.3.jar!/org/elasticsearch/action/get/GetResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TuringSearchOption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="141" column="36" lean-forward="false" selection-start-line="141" selection-start-column="36" selection-end-line="141" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/2.4.3/elasticsearch-2.4.3.jar!/org/elasticsearch/action/search/SearchRequestBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TuringSearchAdminUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="217" column="0" lean-forward="true" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/ElasticSearchUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="46" column="31" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="731" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/2.4.3/elasticsearch-2.4.3.jar!/org/elasticsearch/action/search/SearchType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="22" column="61" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cn/com/turing/search/test/TuringSearchApiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding>
+            <marker date="1482387873492" expanded="false" signature="1567:1583" ph="&lt;~&gt;" />
+            <marker date="1482387873492" expanded="false" signature="2036:2048" ph="&lt;~&gt;" />
+            <marker date="1482387873492" expanded="false" signature="3348:3364" ph="&lt;~&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="423">
+          <caret line="47" column="21" lean-forward="false" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1332">
+          <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#2094#2095#0" expanded="true" />
+            <element signature="e#2128#2129#0" expanded="true" />
+            <element signature="e#2182#2183#0" expanded="true" />
+            <element signature="e#2228#2229#0" expanded="true" />
+            <element signature="e#2259#2260#0" expanded="true" />
+            <element signature="e#2286#2287#0" expanded="true" />
+            <element signature="e#2326#2327#0" expanded="true" />
+            <element signature="e#2358#2359#0" expanded="true" />
+            <element signature="e#2392#2393#0" expanded="true" />
+            <element signature="e#2428#2429#0" expanded="true" />
+            <element signature="e#2472#2473#0" expanded="false" />
+            <element signature="e#2514#2515#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/com/turing/search/utils/TuringSearchUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="458" column="0" lean-forward="true" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

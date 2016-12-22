@@ -13,8 +13,17 @@ import static org.elasticsearch.node.NodeBuilder.nodeBuilder;
 
 public class TsClient {
 
+    /**
+     * 集群名称
+     */
     private String clusterName;
-    private String[] addressArray; //ES集群的ip，填一个或两个节点IP
+    /**
+     * TS集群的ip，填一个或两个节点IP
+     */
+    private String[] addressArray;
+    /**
+     * TS TCP端口号
+     */
     private int port;
 
     public TsClient(String clusterName, String[] addressArray, int port) {
@@ -34,7 +43,8 @@ public class TsClient {
     public Client nodeClient() {
         /** 两种方式设置clustername
          * 1，参数指定 nodeBuilder().clusterName("yourclustername")
-         * 2，在classpath下面设置yml的配置文件**/
+         * 2，在classpath下面设置yml的配置文件
+         * **/
         Node node = nodeBuilder().clusterName(clusterName).client(true).node();
         Client client = node.client();
         return client;
@@ -49,7 +59,7 @@ public class TsClient {
      * client.transport.nodes_sampler_interval
      */
     public Client transportClient() {
-        //ES 2.3+
+        //For ES 2.3+
         Settings settings = Settings.settingsBuilder().put("cluster.name", clusterName)
                 .put("client.transport.sniff", true).build();
         Client client = TransportClient.builder().settings(settings).build();

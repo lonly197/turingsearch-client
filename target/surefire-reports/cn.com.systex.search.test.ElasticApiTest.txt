@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: cn.com.systex.search.test.ElasticApiTest
--------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
