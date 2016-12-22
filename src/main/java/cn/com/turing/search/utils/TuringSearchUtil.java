@@ -124,7 +124,6 @@ public class TuringSearchUtil {
 
         SearchResponse searchResponse = client.prepareSearch(index)
                 .setQuery(query)
-                .setSearchType(SearchType.SCAN)
                 .setScroll(scroll)
                 .setFrom(0)
                 .setSize(size).execute().actionGet();
@@ -284,7 +283,6 @@ public class TuringSearchUtil {
     public static void scrollSearch(String index, String type, QueryBuilder queryBuilder, int size) {
         SearchResponse searchResponse = client.prepareSearch(index)
                 .setTypes(type)
-                .setSearchType(SearchType.SCAN)
                 .setScroll(new TimeValue(10000)) //10s 数据需要保存的时长
                 .setQuery(queryBuilder)
                 .setSize(size).execute().actionGet();
